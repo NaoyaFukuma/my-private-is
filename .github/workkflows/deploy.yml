@@ -1,0 +1,11 @@
+name: webapp-deploy
+on:
+  push:
+
+working_directory: ./webapp/golng
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying the webapp"
